@@ -70,7 +70,7 @@ char **argv;
 		perror("temp file 2");
 		exit(1);
 	}
-	printf("#include \"c1.h\"");
+	printf("#include \"c1ext.h\"");
 	curbuf = obuf;
 loop:
 	c = getchar();

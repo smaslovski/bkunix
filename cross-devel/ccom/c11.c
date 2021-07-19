@@ -5,7 +5,7 @@
  * under the terms of the GNU General Public License (GPL).
  * See the accompanying file "COPYING" for more details.
  */
-#include "c1.h"
+#include "c1ext.h"
 
 int
 degree(t)

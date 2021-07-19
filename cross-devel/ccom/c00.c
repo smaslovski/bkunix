@@ -57,7 +57,7 @@ struct kwtab {
 
 union	tree *cmst[CMSIZ];
 union	tree **cp = cmst;
-int	Wflag;			/* print warning messages */
+extern int	Wflag;			/* print warning messages */
 
 int
 main(argc, argv)

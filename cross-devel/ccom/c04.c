@@ -6,7 +6,7 @@
  * See the accompanying file "COPYING" for more details.
  */
 #include <stdarg.h>
-#include "c0.h"
+#include "c0ext.h"
 
 /*
  * Reduce the degree-of-reference by one.

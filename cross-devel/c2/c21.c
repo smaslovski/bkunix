@@ -5,7 +5,7 @@
  * under the terms of the GNU General Public License (GPL).
  * See the accompanying file "COPYING" for more details.
  */
-#include "c2.h"
+#include "c2ext.h"
 
 void	dualop();
 int	findrand();

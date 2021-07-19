@@ -8,7 +8,7 @@
  * under the terms of the GNU General Public License (GPL).
  * See the accompanying file "COPYING" for more details.
  */
-#include "c0.h"
+#include "c0ext.h"
 
 /*
  * Process a sequence of declaration statements

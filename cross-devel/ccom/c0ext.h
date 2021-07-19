@@ -39,7 +39,7 @@
 #define	LNBPW	16	/* bits per word, compiler's machine */
 /* dlf change
 #define	STAUTO	(-6)	 offset of first auto variable */
-int	STAUTO;
+extern int	STAUTO;
 #define	STARG	4	/* offset of first argument */
 #define	DCLSLOP	512	/* Amount trees lie above declaration stuff */
 
@@ -167,58 +167,57 @@ struct swtab {
 #define	TNULL	(union tree *)NULL
 
 extern char	cvtab[4][4];
-char	filename[64];
+extern char	filename[64];
 extern int	opdope[];
 extern char	ctab[];
-char	symbuf[MAXCPS+2];
-struct	nmlist	*hshtab[HSHSIZ];
-int	kwhash[(HSHSIZ+LNBPW-1)/LNBPW];
-union	tree **cp;
-int	isn;
-struct	swtab	swtab[SWSIZ];
-int	unscflg;
-struct	swtab	*swp;
-int	contlab;
-int	brklab;
-int	retlab;
-int	deflab;
-unsigned autolen;		/* make these int if necessary */
-unsigned maxauto;		/* ... will only cause trouble rarely */
-int	peeksym;
-int	peekc;
-int	eof;
-int	line;
-char	*locbase;
-char	*treebase;
-char	*treebot;
-char	*coremax;
-struct	nmlist	*defsym;
-struct	nmlist	*funcsym;
-int	proflg;
-struct	nmlist	*csym;
-int	cval;
-LTYPE	lcval;
-int	nchstr;
-int	nerror;
-struct	nmlist *paraml;
-struct	nmlist *parame;
-int	strflg;
-int	mosflg;
-int	initflg;
-char	sbuf[BUFSIZ];
-FILE	*sbufp;
-int	regvar;
-int	bitoffs;
-struct	tnode	funcblk;
+extern char	symbuf[MAXCPS+2];
+extern struct	nmlist	*hshtab[HSHSIZ];
+extern int	kwhash[(HSHSIZ+LNBPW-1)/LNBPW];
+extern union	tree **cp;
+extern int	isn;
+extern struct	swtab	swtab[SWSIZ];
+extern int	unscflg;
+extern struct	swtab	*swp;
+extern int	contlab;
+extern int	brklab;
+extern int	retlab;
+extern int	deflab;
+extern unsigned autolen;		/* make these int if necessary */
+extern unsigned maxauto;		/* ... will only cause trouble rarely */
+extern int	peeksym;
+extern int	peekc;
+extern int	eof;
+extern int	line;
+extern char	*locbase;
+extern char	*treebase;
+extern char	*treebot;
+extern char	*coremax;
+extern struct	nmlist	*defsym;
+extern struct	nmlist	*funcsym;
+extern int	proflg;
+extern struct	nmlist	*csym;
+extern int	cval;
+extern LTYPE	lcval;
+extern int	nchstr;
+extern int	nerror;
+extern struct	nmlist *paraml;
+extern struct	nmlist *parame;
+extern int	strflg;
+extern int	mosflg;
+extern int	initflg;
+extern char	sbuf[BUFSIZ];
+extern FILE	*sbufp;
+extern int	regvar;
+extern int	bitoffs;
+extern struct	tnode	funcblk;
 extern char	cvntab[];
-char	numbuf[64];
-struct	nmlist **memlist;
-union	str *sparent;
-int	nmems;
-struct	nmlist	structhole;
-int	blklev;
-int	mossym;
-
+extern char	numbuf[64];
+extern struct	nmlist **memlist;
+extern union	str *sparent;
+extern int	nmems;
+extern struct	nmlist	structhole;
+extern int	blklev;
+extern int	mossym;
 /*
   operators
 */
