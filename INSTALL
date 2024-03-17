@@ -3,6 +3,10 @@
 
 This file describes how to build BKUNIX from the source package.
 
+Prerequisites:
+Because the project builds with -m32 option you will need to have a gcc-multilib
+package installed, if you have an AMD64 Debian Linux based system.
+
 1.  Install the cross-development system.
 
     Just `cd' to the directory cross-devel/ and type
